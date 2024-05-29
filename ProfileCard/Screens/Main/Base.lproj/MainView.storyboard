@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="ProfileCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dfp-yA-nnL">
+                                <rect key="frame" x="155.66666666666666" y="259.33333333333331" width="82" height="50.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ri6-2h-OTG">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brr-R2-27R">
+                                        <rect key="frame" x="11.666666666666689" y="30.333333333333371" width="58.333333333333343" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4og-nI-Dmw">
+                                <rect key="frame" x="106.66666666666669" y="336" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="IRQ-9s-DEf"/>
+                                    <constraint firstAttribute="width" constant="180" id="f7X-J9-KMV"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1X9-fm-SyR">
+                                <rect key="frame" x="153.66666666666666" y="542" width="85.666666666666657" height="50.666666666666629"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Z5-wc-bHs">
+                                        <rect key="frame" x="0.0" y="0.0" width="85.666666666666671" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4za-sR-WSI">
+                                        <rect key="frame" x="4" y="30.333333333333371" width="78" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="rU3-qi-Ncx">
+                                <rect key="frame" x="98.666666666666686" y="618.66666666666663" width="196" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9z6-Fi-fVB">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="ZFa-UG-UTd"/>
+                                            <constraint firstAttribute="width" constant="80" id="j86-k2-1Em"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gqv-Sd-FCC">
+                                        <rect key="frame" x="116" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="jRP-Qu-aDt"/>
+                                            <constraint firstAttribute="height" constant="80" id="tb8-UJ-3AL"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1X9-fm-SyR" firstAttribute="top" secondItem="4og-nI-Dmw" secondAttribute="bottom" constant="26" id="E0S-E3-DVz"/>
+                            <constraint firstItem="4og-nI-Dmw" firstAttribute="top" secondItem="dfp-yA-nnL" secondAttribute="bottom" constant="26" id="Lns-wJ-wYo"/>
+                            <constraint firstItem="1X9-fm-SyR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q8w-2g-Cg4"/>
+                            <constraint firstItem="4og-nI-Dmw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aS7-4l-Jkw"/>
+                            <constraint firstItem="4og-nI-Dmw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b4m-h4-dIi"/>
+                            <constraint firstItem="rU3-qi-Ncx" firstAttribute="top" secondItem="1X9-fm-SyR" secondAttribute="bottom" constant="26" id="df2-Nn-1gE"/>
+                            <constraint firstItem="rU3-qi-Ncx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n8R-Uf-54V"/>
+                            <constraint firstItem="dfp-yA-nnL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yOV-s0-0KW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailIcon" destination="gqv-Sd-FCC" id="eFr-2V-xz0"/>
+                        <outlet property="emailTitle" destination="4za-sR-WSI" id="0qG-X2-cCf"/>
+                        <outlet property="nameTitle" destination="Ri6-2h-OTG" id="3A9-o7-FoS"/>
+                        <outlet property="phoneIcon" destination="9z6-Fi-fVB" id="k0K-WB-ZOq"/>
+                        <outlet property="phoneTitle" destination="2Z5-wc-bHs" id="xjP-HS-GeT"/>
+                        <outlet property="photo" destination="4og-nI-Dmw" id="PKQ-dm-Urs"/>
+                        <outlet property="subtitle" destination="brr-R2-27R" id="Tod-YW-3Hy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
