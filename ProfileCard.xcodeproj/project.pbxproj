@@ -41,6 +41,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83B60BC02C2A6FA000B310C9 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				83C87D3C2C0683B5001EF453 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		83B60BC12C2A6FD500B310C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83C87D372C0683B5001EF453 /* AppIcon.xcassets */,
+				83C87D482C0687BC001EF453 /* Colours.xcassets */,
+				83C87D4A2C0687CB001EF453 /* Icons.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		83C87D222C0683B0001EF453 = {
 			isa = PBXGroup;
 			children = (
@@ -80,10 +98,8 @@
 			children = (
 				83C87D2E2C0683B1001EF453 /* AppDelegate.swift */,
 				83C87D302C0683B1001EF453 /* SceneDelegate.swift */,
-				83C87D372C0683B5001EF453 /* AppIcon.xcassets */,
-				83C87D482C0687BC001EF453 /* Colours.xcassets */,
-				83C87D4A2C0687CB001EF453 /* Icons.xcassets */,
-				83C87D3C2C0683B5001EF453 /* Info.plist */,
+				83B60BC12C2A6FD500B310C9 /* Resources */,
+				83B60BC02C2A6FA000B310C9 /* Config */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -134,6 +150,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
+				ORGANIZATIONNAME = "earl-grey";
 				TargetAttributes = {
 					83C87D2A2C0683B1001EF453 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -329,7 +346,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XJ2GHDKS2G;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ProfileCard/Utilities/Info.plist;
+				INFOPLIST_FILE = ProfileCard/Utilities/Config/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Profile Card";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = MainView;
@@ -357,7 +376,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XJ2GHDKS2G;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ProfileCard/Utilities/Info.plist;
+				INFOPLIST_FILE = ProfileCard/Utilities/Config/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Profile Card";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = MainView;

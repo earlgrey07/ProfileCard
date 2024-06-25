@@ -3,6 +3,7 @@
 //  ProfileCard
 //
 //  Created by Данил on 29.05.2024.
+//  Copyright © 2024 earl-grey. All rights reserved.
 //
 
 import UIKit
@@ -10,14 +11,15 @@ import UIKit
 class MainViewController: UIViewController {
     
     //MARK: - IBOutlets
-    @IBOutlet weak private var nameTitle: UILabel!
-    @IBOutlet weak private var subtitle: UILabel!
-    @IBOutlet weak private var phoneTitle: UILabel!
-    @IBOutlet weak private var emailTitle: UILabel!
     
-    @IBOutlet weak private var photo: UIImageView!
-    @IBOutlet weak private var phoneIcon: UIImageView!
-    @IBOutlet weak private var emailIcon: UIImageView!
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var genderBirthDateLabel: UILabel!
+    @IBOutlet private weak var phoneLabel: UILabel!
+    @IBOutlet private weak var emailLabel: UILabel!
+    
+    @IBOutlet private weak var photoIconImageView: UIImageView!
+    @IBOutlet private weak var phoneIconImageView: UIImageView!
+    @IBOutlet private weak var emailIconImageView: UIImageView!
     
     // MARK: - Lifecycle
     
@@ -28,25 +30,32 @@ class MainViewController: UIViewController {
     }
     
     //MARK: - Private
+    
     private func configureUI() {
-        nameTitle.text = "Daniil Zhorin"
-        subtitle.text = "Male | Born 19.07.2000"
-        phoneTitle.text = "+7(930)008-52-93"
-        emailTitle.text = "earl_grey07@icloud.com"
+        let textColour = UIColor(named: "pc.text")
+        let borderWidth = 5.0
         
         view.backgroundColor = UIColor(named: "pc.background")
-        nameTitle.textColor = UIColor(named: "pc.title")
-        subtitle.textColor = UIColor(named: "pc.text")
-        phoneTitle.textColor = UIColor(named: "pc.text")
-        emailTitle.textColor = UIColor(named: "pc.text")
+        nameLabel.textColor = UIColor(named: "pc.title")
+        genderBirthDateLabel.textColor = textColour
+        phoneLabel.textColor = textColour
+        emailLabel.textColor = textColour
         
-        photo.layer.cornerRadius = 90
-        photo.layer.borderWidth = 5
-        photo.layer.borderColor = CGColor(red: 1, green: 1, blue: 1, alpha: 100)
+        photoIconImageView.layer.cornerRadius = photoIconImageView.bounds.size.width * 0.5
+        photoIconImageView.layer.borderWidth = borderWidth
+        photoIconImageView.layer.borderColor = UIColor(named: "pc.content")?.cgColor
     }
+    
     private func fillData() {
-        photo.image = UIImage(named: "photo")
-        phoneIcon.image = UIImage(named: "phone")
-        emailIcon.image = UIImage(named: "email")
+        nameLabel.text = "Daniil Zhorin"
+        genderBirthDateLabel.text = "Male | Born 19.07.2000"
+        
+        photoIconImageView.image = UIImage(named: "photo")
+        
+        phoneLabel.text = "+7(930)008-52-93"
+        emailLabel.text = "earl_grey07@icloud.com"
+        
+        phoneIconImageView.image = UIImage(named: "phone")
+        emailIconImageView.image = UIImage(named: "email")
     }
 }

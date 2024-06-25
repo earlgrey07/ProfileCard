@@ -91,13 +91,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="emailIcon" destination="gqv-Sd-FCC" id="eFr-2V-xz0"/>
-                        <outlet property="emailTitle" destination="4za-sR-WSI" id="0qG-X2-cCf"/>
-                        <outlet property="nameTitle" destination="Ri6-2h-OTG" id="3A9-o7-FoS"/>
-                        <outlet property="phoneIcon" destination="9z6-Fi-fVB" id="k0K-WB-ZOq"/>
-                        <outlet property="phoneTitle" destination="2Z5-wc-bHs" id="xjP-HS-GeT"/>
-                        <outlet property="photo" destination="4og-nI-Dmw" id="PKQ-dm-Urs"/>
-                        <outlet property="subtitle" destination="brr-R2-27R" id="Tod-YW-3Hy"/>
+                        <outlet property="emailIconImageView" destination="gqv-Sd-FCC" id="GoW-zA-Hv9"/>
+                        <outlet property="emailLabel" destination="4za-sR-WSI" id="xJO-EO-SbP"/>
+                        <outlet property="genderBirthDateLabel" destination="brr-R2-27R" id="r6A-Tj-XFN"/>
+                        <outlet property="nameLabel" destination="Ri6-2h-OTG" id="73w-4G-qMT"/>
+                        <outlet property="phoneIconImageView" destination="9z6-Fi-fVB" id="J71-to-s4G"/>
+                        <outlet property="phoneLabel" destination="2Z5-wc-bHs" id="Pm3-NZ-a5H"/>
+                        <outlet property="photoIconImageView" destination="4og-nI-Dmw" id="lBi-zr-G5Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
